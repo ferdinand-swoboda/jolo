@@ -70,6 +70,10 @@
         <url>https://travis-ci.org/PicnicSupermarket/jolo</url>
     </ciManagement>
 
+    <properties>
+        <version.jooq>3.12.1</version.jooq>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -219,7 +223,7 @@
                             <forcedTypes>
                                 <forcedType>
                                     <userType>Long[]</userType>
-                                    <expression>.*\.RELATEDFOOIDS</expression>
+                                    <includeExpression>.*\.RELATEDFOOIDS</includeExpression>
                                     <converter>org.jooq.Converter.ofNullable(Object[].class, Long[].class, i -&gt; (Long[])i, i -&gt; i)</converter>
                                 </forcedType>
                             </forcedTypes>
