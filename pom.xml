@@ -5,7 +5,7 @@
     <parent>
         <groupId>tech.picnic</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
     </parent>
 
     <groupId>tech.picnic.jolo</groupId>
@@ -69,10 +69,6 @@
         <system>Travis CI</system>
         <url>https://travis-ci.org/PicnicSupermarket/jolo</url>
     </ciManagement>
-
-    <properties>
-        <version.jooq>3.12.1</version.jooq>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
